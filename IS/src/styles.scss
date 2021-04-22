@@ -137,6 +137,9 @@ header{
         grid-row: span 12;
     }
     .inner-2{
+        .page-title{    
+            padding-left:0px ;
+        }
         background-color: $primary;
     }
     .inner-3
