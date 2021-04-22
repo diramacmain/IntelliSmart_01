@@ -6,6 +6,7 @@ $grey:#545454;
 body{
     margin: 0;
     font-family: 'Lato';
+    color: $grey;
 }
 .container{
     width: 80%;
@@ -43,6 +44,39 @@ header{
             }
         }
     }
+}
+.page{
+    h1{
+        .spartan{
+            font-weight: 800px;
+        }
+    }
+}
+.mcd-tile{
+    background-color: #fff;
+    border: $primary solid 1px;
+    padding: 2em;
+    margin: 1em;
+    h3,p{
+        color: $grey;
+    }
+    a{
+        font-size: 11px;
+        text-decoration: none;
+        color: $primary;
+        .link-arrow-icon{
+            margin-left: 0px;
+            transition: margin 0.5s;
+        }
+        &:hover{
+            color: darken($primary,10);
+            .link-arrow-icon{
+                margin-left: 10px;
+            }
+            cursor: pointer;
+        }
+    }
+
 }
 .home-container{
     display: grid;
@@ -101,38 +135,70 @@ header{
         grid-column: span 4;
         grid-row: span 12;
     }
-    .inner-1{
-
-    }
     .inner-2{
         background-color: $primary;
     }
-    .inner-3{
-        
+    .inner-3
+    {
+        .inner-inner{
+            h2{
+                border: solid 0px $primary;
+                border-bottom-width:3px;
+                margin-right: 20px;
+                margin-left: 3em;
+                padding-bottom: 1em;
+            }
+            margin-bottom: 15px;
+            margin-top: 50px;
+            text-align: right;
+        ul{
+            list-style: none;
+            font-size: 16px;
+            li{
+                padding: 2em;
+                border: solid $primary 0px;
+                transition:border 0.3s;
+                &:hover{
+                    border-width:0px 40px 0px 0px;
+                }
+                a{
+                    text-decoration: none;
+                    color: $grey;
+                    &:hover{
+                        cursor: pointer;
+                        color: darken($primary,10);
+                    }
+                    &:active{
+                        color: darken($primary,10);
+                        border-width:0px 40px 0px 0px;
+                    }
+                    
+                }
+            }
+        }
+        }
     }
 }
-.mcd-tile{
-    border: $primary solid 1px;
+.page-title{
+    background-color: #fff;
     padding: 1em;
-    margin: 1em;
-    h3,p{
-        color: $grey;
-    }
-    a{
-        font-size: 11px;
-        text-decoration: none;
-        color: $primary;
-        .link-arrow-icon{
-            margin-left: 0px;
-            transition: margin 0.5s;
+    margin: 4em 1em 3em 1em;
+    h1{
+        padding: 0px 1em 0px 1em;
+        .lato{
+            font-size: 25px;
         }
-        &:hover{
-            color: darken($primary,10);
-            .link-arrow-icon{
-                margin-left: 10px;
-            }
-            cursor: pointer;
+        .spartan{
+            font-size: 50px;
+            font-weight: bold;
         }
     }
-
+}
+.inner-2{
+    position: relative;
+    .inner-inner{
+        position:absolute;
+        margin-left: -300px;
+        width: 500px;
+    }
 }
