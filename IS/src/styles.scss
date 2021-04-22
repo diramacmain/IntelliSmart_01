@@ -94,3 +94,36 @@ header{
         text-align: right;
     }
 }
+#pg-products-and-solutions{
+    display: grid;
+    grid-template: repeat(12,58px) / repeat(12,1fr);
+    .inner{
+        grid-column: span 4;
+        grid-row: span 12;
+    }
+    .inner-1{
+
+    }
+    .inner-2{
+        background-color: $primary;
+    }
+    .inner-3{
+        
+    }
+}
+.mcd-tile{
+    border: $primary solid 1px;
+    padding: 1em;
+    margin: 1em;
+    h3,p{
+        color: $grey;
+    }
+    a{
+        text-decoration: none;
+        color: $primary;
+        &:hover{
+            color: darken($primary,10);
+        }
+    }
+
+}
