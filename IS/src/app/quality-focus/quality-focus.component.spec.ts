@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListComponent } from './list.component';
+import { QualityFocusComponent } from './quality-focus.component';
 
-describe('ListComponent', () => {
-  let component: ListComponent;
-  let fixture: ComponentFixture<ListComponent>;
+describe('QualityFocusComponent', () => {
+  let component: QualityFocusComponent;
+  let fixture: ComponentFixture<QualityFocusComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ListComponent ]
+      declarations: [ QualityFocusComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListComponent);
+    fixture = TestBed.createComponent(QualityFocusComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
