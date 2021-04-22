@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+$primary: #00c2cb;
+$grey:#545454;
+#pg-about-us{
+    display: grid;
+    grid-template: repeat(12,58px) / repeat(12,1fr);
+    .bigBlue{
+        grid-row: 1 / -1;
+        grid-column: 7 / -1;
+        background-color: $primary;
+        margin: 1em;
+        padding: 2em;
+        ul{
+            list-style: none;
+            text-align: right;
+        }
+    }
+    .page-title,.mcd-tile{
+        grid-column: 1 / 7;
+        .lato{
+            font-size:30px;
+        }
+        .spartan{
+            font-size: 55px;
+        }
+    }
+    .page-title{
+        grid-row: 2 / 7;
+    }
+    .mcd-tile{
+        grid-row: 7 / -1;
+    }
+    
+}

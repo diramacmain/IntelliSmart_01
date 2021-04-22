@@ -129,61 +129,7 @@ header{
         text-align: right;
     }
 }
-#pg-products-and-solutions{
-    display: grid;
-    grid-template: repeat(12,58px) / repeat(12,1fr);
-    .inner{
-        grid-column: span 4;
-        grid-row: span 12;
-    }
-    .inner-2{
-        .page-title{    
-            padding-left:0px ;
-        }
-        background-color: $primary;
-    }
-    .inner-3
-    {
-        .inner-inner{
-            h2{
-                border: solid 0px $primary;
-                border-bottom-width:3px;
-                max-width: 330px;
-                margin-left: 3em;
-                padding-bottom: 1em;
-            }
-            margin-bottom: 15px;
-            margin-top: 50px;
-            text-align: right;
-        ul{
-            list-style: none;
-            font-size: 16px;
-            li{
-                padding: 2em;
-                border: solid $primary 0px;
-                transition:border 0.4s;
-                &:hover{
-                    border-width:0px 40px 0px 0px;
-                }
-                a{
-                    text-decoration: none;
-                    color: $grey;
-                    &:hover{
-                        cursor: pointer;
-                        color: darken($primary,10);
-                        font-weight: bold;
-                    }
-                    &:active{
-                        color: darken($primary,10);
-                        border-width:0px 40px 0px 0px;
-                    }
-                    
-                }
-            }
-        }
-        }
-    }
-}
+
 .page-title{
     background-color: #fff;
     padding: 1em;
@@ -199,11 +145,4 @@ header{
         }
     }
 }
-.inner-2{
-    position: relative;
-    .inner-inner{
-        position:absolute;
-        margin-left: -300px;
-        width: 500px;
-    }
-}
+

@@ -34,7 +34,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "about-us.components.scss",
+              "products-and-solutions.components.scss",
+              "footer.components.scss",
+              "contact-us.components.scss",
+              "quality-focus.components.scss",
+              "system-components.components.scss"
             ],
             "scripts": []
           },
