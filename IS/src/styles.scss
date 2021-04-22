@@ -119,10 +119,19 @@ header{
         color: $grey;
     }
     a{
+        font-size: 11px;
         text-decoration: none;
         color: $primary;
+        .link-arrow-icon{
+            margin-left: 0px;
+            transition: margin 0.5s;
+        }
         &:hover{
             color: darken($primary,10);
+            .link-arrow-icon{
+                margin-left: 10px;
+            }
+            cursor: pointer;
         }
     }
 
