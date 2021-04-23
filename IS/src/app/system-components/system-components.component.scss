@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+$primary: #00c2cb;
+$grey:#545454;
+#pg-system-components{
+    display: grid;
+    grid-template: repeat(12,1fr) / repeat(12,1fr);
+    height: 650px;
+    .page-title{
+        grid-column: 1 / -1;
+        grid-row:1 / 1;
+    }
+    .mcd-tile{
+        grid-column: span 4;
+        grid-row: 2 / -1;
+    }
+}
