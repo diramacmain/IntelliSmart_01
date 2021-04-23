@@ -11,6 +11,12 @@ $grey:#545454;
         grid-column: span 4;
         grid-row: span 12;
     }
+    .inner-1{
+        background:linear-gradient(0deg, rgba(255,255,255, 0.3), rgba(255,255,255, 0.8)), url("../images/skyscraper.jpg");
+        background-size: auto 100%;
+        filter: grayscale(100%);
+
+    }
     .inner-2{
         .page-title{    
             padding-left:0px ;

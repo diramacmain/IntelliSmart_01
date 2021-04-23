@@ -11,6 +11,7 @@ import { SystemComponentsComponent } from './system-components/system-components
 import { QualityFocusComponent } from './quality-focus/quality-focus.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { UtilitiesDifferenceComponent } from './utilities-difference/utilities-difference.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { FooterComponent } from './footer/footer.component';
     QualityFocusComponent,
     ContactUsComponent,
     FooterComponent,
+    UtilitiesDifferenceComponent,
   ],
   imports: [
     BrowserModule,
