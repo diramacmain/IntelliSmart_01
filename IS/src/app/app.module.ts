@@ -10,8 +10,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { SystemComponentsComponent } from './system-components/system-components.component';
 import { QualityFocusComponent } from './quality-focus/quality-focus.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { FooterComponent } from './footer/footer.component';
 import { UtilitiesDifferenceComponent } from './utilities-difference/utilities-difference.component';
+import { IntelliFooterComponent } from './intelli-footer/intelli-footer.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +23,12 @@ import { UtilitiesDifferenceComponent } from './utilities-difference/utilities-d
     SystemComponentsComponent,
     QualityFocusComponent,
     ContactUsComponent,
-    FooterComponent,
     UtilitiesDifferenceComponent,
+    IntelliFooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
