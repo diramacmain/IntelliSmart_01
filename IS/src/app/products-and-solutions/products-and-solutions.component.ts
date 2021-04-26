@@ -19,13 +19,29 @@ export class ProductsAndSolutionsComponent implements OnInit {
   constructor(private route: ActivatedRoute) { 
   }
   
- checkInfo(t:number){
-   let myData = data[t]?.title;
-      alert(myData)
+ checkInfo(t:number = 0){
+   if(t == this.i0){
+    alert(data[0].paragraph)
+   }
+   if(t == this.i1){
+    console.log(data[0].paragraph)
+   }
+   if(t == this.i2){
+
+  }
+  if(t == this.i3){
+
+  }
+  if(t == this.i4){
+
+  }  
+  if(t == this.i5){
+
+  }
   }
 
   ngOnInit(): void {
-    this.checkInfo
+
   }
 
   

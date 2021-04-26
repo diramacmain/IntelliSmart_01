@@ -10,7 +10,6 @@ import { ProductsAndSolutionsComponent } from './products-and-solutions/products
 import { AboutUsComponent } from './about-us/about-us.component';
 import { SystemComponentsComponent } from './system-components/system-components.component';
 import { QualityFocusComponent } from './quality-focus/quality-focus.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
 import { UtilitiesDifferenceComponent } from './utilities-difference/utilities-difference.component';
 import { IntelliFooterComponent } from './intelli-footer/intelli-footer.component';
 
@@ -24,7 +23,6 @@ import { IntelliFooterComponent } from './intelli-footer/intelli-footer.componen
     AboutUsComponent,
     SystemComponentsComponent,
     QualityFocusComponent,
-    ContactUsComponent,
     UtilitiesDifferenceComponent,
     IntelliFooterComponent,
   ],

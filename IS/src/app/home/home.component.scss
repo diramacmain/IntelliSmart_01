@@ -53,3 +53,8 @@ $grey:#545454;
         text-align: right;
     }
 }
+.spin:hover {
+
+    transition: .5s;
+    transform: rotate(-90deg);
+    }
