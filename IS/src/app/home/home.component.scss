@@ -54,7 +54,9 @@ $grey:#545454;
     }
 }
 .spin:hover {
-
     transition: .5s;
     transform: rotate(-90deg);
     }
+@media only screen and (max-width: 770px) {
+    
+}
