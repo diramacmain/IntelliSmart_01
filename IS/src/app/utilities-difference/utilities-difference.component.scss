@@ -4,8 +4,6 @@
 $primary: #00c2cb;
 $grey:#545454;
 #pg-utilities-difference{
-    display: grid;
-    grid-template: repeat(12,50px) / repeat(12,1fr);
     h1 span{
         &:last-child{
             color: $primary;
@@ -20,3 +18,31 @@ $grey:#545454;
         grid-row: span 6;
     }
 }
+@media only screen and (max-width: 1200px) {
+    #pg-utilities-difference{
+        min-width: 512px;
+        height: 1250px;
+        .page-title{
+            grid-column: span 6;
+            grid-row: span 3;
+        }
+        .mcd-tile{
+            grid-column: span 6;
+            grid-row: span 3;
+        }
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    #pg-utilities-difference{
+        min-width: 360px;
+        height: 100%;
+        .page-title{
+            grid-column: span 12;
+            grid-row: span 2;
+        }
+        .mcd-tile{
+            grid-column: span 12;
+            grid-row: span 2;
+        }
+    }
+  }

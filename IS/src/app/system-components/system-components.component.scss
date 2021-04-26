@@ -4,8 +4,6 @@
 $primary: #00c2cb;
 $grey:#545454;
 #pg-system-components{
-    display: grid;
-    grid-template: repeat(12,1fr) / repeat(12,1fr);
     height: 650px;
     .page-title{
         grid-column: 1 / -1;
@@ -14,5 +12,39 @@ $grey:#545454;
     .mcd-tile{
         grid-column: span 4;
         grid-row: 2 / -1;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #pg-system-components{
+        height: 1200px;
+        .page-title{
+            text-align: center;
+            grid-column: span 12;
+            grid-row:span 2;
+        }
+        .mcd-tile{
+            grid-column: span 6;
+            grid-row: span 5;
+            img{
+                width: 250px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    #pg-system-components{
+        height: 100%;
+        .page-title{
+            text-align: center;
+            grid-column: span 12;
+            grid-row:span 2;
+        }
+        .mcd-tile{
+            grid-column: span 12;
+            grid-row: span 3;
+            img{
+                width: 250px;
+            }
+        }
     }
 }

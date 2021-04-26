@@ -7,6 +7,12 @@ body{
     margin: 0;
     font-family: 'Lato';
     color: $grey;
+    a{
+        &:hover{
+            color: $primary;
+            cursor: pointer;
+        }
+    }
 }
 .container{
     width: 80%;
@@ -18,19 +24,15 @@ body{
 
 .spartan{
     font-family: 'spartan';
-}
-header{
-    padding: 1em;
-    // background-color: $primary;
-    a {
-        color: #333;
-        text-decoration: none;
-    }
+}   
     a.logo{
         font-weight: bold;
     }
     nav{
-        float: right;
+        a {
+            color: #333;
+            text-decoration: none;
+        }
         ul{
             list-style-type: none;
             margin: 0;
@@ -44,9 +46,11 @@ header{
             }
         }
     }
-}
+
 .page{
     height: 750px;
+    display: grid;
+    grid-template: repeat(12,1fr) / repeat(12,1fr);
     h1{
         .spartan{
             font-weight: 800px;
@@ -64,14 +68,13 @@ header{
     a{
         font-size: 11px;
         text-decoration: none;
-        color: $primary;
+        color: $primary !important;
         .link-arrow-icon{
             margin-left: 0px;
             transition: margin 0.5s;
         }
         &:hover{
             color: darken($primary,10);
-            font-weight: bold;
             .link-arrow-icon{
                 margin-left: 10px;
             }
@@ -80,56 +83,7 @@ header{
     }
 
 }
-.home-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(12,42px);
-    grid-gap: 1em;
-    .home-logo{
-        grid-column: 1 / 2;
-        grid-row: 1 / 7;
-        background-color: $primary;
-        text-align: left;
-        padding: 2em;
-        color: #fff;
-        .lato{
-            font-size: 25px;
-        }
-        .spartan{
-            font-weight: bold;
-            font-size: 35px;
-        }
-    }
-    .home-btn-down{
-        grid-column: 1 / 2;
-        grid-row: 9 / -2;
-        padding: 1em;
-    }
-    .home-h1{
-        grid-column: 2 / -1;
-        grid-row: 5 / -1;
-    }
-    div{
-        
-        text-align: center;
-    }
-    .btn-page-down{
-        text-decoration: none;
-        border: solid 2px $primary;
-        padding: 25px 20px 25px 20px;
-        
-        border-radius: 100%;
-        color: $primary;
-        font-weight: bold;
-    }
-    h1{
-        font-family: 'spartan';
-        font-weight: bold;
-        font-size: 44px;
-        color:$grey;
-        text-align: right;
-    }
-}
+
 
 .page-title{
     background-color: #fff;
@@ -147,33 +101,83 @@ header{
     }
 }
 .page {
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
+    height: 700px;
   }
-  @keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-  }
+#bigFooter{
+    
+    font-family: "Lato";
+    color: rgb(200, 200, 200);
+    h3,p{
+        color: rgb(200, 200, 200);
+    }
+    .lato{
+        font-size:30px;
+    }
+    .spartan{
+        font-size: 70px;
+    }
+    height: 400px;
+    background-color: #212121;
+    display: grid;
+    grid-template: repeat(12,1fr) / repeat(12,1fr);
+    div{
+        grid-column: span 3;
+        grid-row: 1 / -2;
+        padding: 2em;
+        &:nth-child(3){
+            padding: 0px;
+            height: 400px;
+        }
+    }
+    ul{
+        list-style: none;
+        padding-left: 0px;
+        li{
+            padding: 5px;
+        }
+    }
+    a{
+        &:hover{
+            color: $primary;
+        }
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .CopyWriteDiv{
+    grid-row: -2 / -1;
+    grid-column: span 12;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+#bigFooter{
+        height: 800px;
+        div{
+            grid-column: span 6;
+            grid-row: span 5;
+            padding: 2em;
+        
+        }
+        .CopyWriteDiv{
+            grid-row: -2 / -1;
+            grid-column: span 12;
+    }
+}
+}
+@media only screen and (max-width: 560px) {
+    #bigFooter{
+        height: 100%;
+        .CopyWriteDiv{
+            grid-row: -2/-1;
+            grid-column: span 12;
+            }
+        div{
+            grid-column: span 12;
+            grid-row: span 3; 
+    }
+    
+}
+}

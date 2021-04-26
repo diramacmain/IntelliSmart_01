@@ -1,20 +1,91 @@
-<header>
-  <div class="container">
-    <a href="" class="logo">IntelliSmart</a>
-    <nav>
-      <ul>
-        <li><a href="#" routerlink="/">Home</a></li>
-        <li><a href="about-us" routerlink="/about-us">About</a></li>
-        <li><a href="products-and-solutions" routerlink="/products-and-solutions">Products & Solutions</a></li>
-        <li><a href="system-components" routerlink="/system-components">System Components</a></li>
-        <li><a href="quality-focus" routerlink="/quality-focus">Quality Focus</a></li>
-        <li><a href="utilities-difference" routerlink="/utilities-difference">utilities-difference</a></li>
-        <li><a href="contact-us" routerlink="/contact-us">Contact</a></li>
-      </ul>
-    </nav>
+<nav class="navbar navbar-inverse navbar-expand-md">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item"><a class="nav-link" href="#" routerlink="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us" routerlink="/about-us">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="products-and-solutions" routerlink="/products-and-solutions">Products & Solutions</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="system-components" routerlink="/system-components">System Components</a></li>
+        <li class="nav-item"><a class="nav-link" href="quality-focus" routerlink="/quality-focus">Quality Focus</a></li>
+        <li class="nav-item"><a class="nav-link" href="utilities-difference" routerlink="/utilities-difference">Utilities Difference</a></li> -->
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="contact-us" routerlink="/contact-us">Contact</a></li> 
+    </ul>
   </div>
-</header>
+</nav>
+
+  <!-- <nav class="navbar navbar-expand-md ">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#" routerlink="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about-us" routerlink="/about-us">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="products-and-solutions" routerlink="/products-and-solutions">Products & Solutions</a></li>
+        <li class="nav-item"><a class="nav-link" href="system-components" routerlink="/system-components">System Components</a></li>
+        <li class="nav-item"><a class="nav-link" href="quality-focus" routerlink="/quality-focus">Quality Focus</a></li>
+        <li class="nav-item"><a class="nav-link" href="utilities-difference" routerlink="/utilities-difference">Utilities Difference</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact-us" routerlink="/contact-us">Contact</a></li>   
+      </ul>
+    </div>  
+  </nav> -->
 
 <div class="container">
   <router-outlet></router-outlet>
 </div>
+<footer id="bigFooter">
+  <div>
+    <h3>
+      <span class="lato">IntelliSmart</span><br>
+      <span class="spartan">Utilities</span>
+    </h3>
+    <p class="">IntelliSmart Utilities serves clients 
+      around South Africa and abroad with 
+      innovative metering and management 
+      solutions for <strong>electricity</strong>, <strong>water</strong>, 
+      <strong>heat</strong> & <strong>cooling</strong></p>
+  </div>
+  <div>
+    <h4>Products and Solutions
+      </h4>
+    <ul>
+      <li><a>Account Management Solutions</a></li>
+      <li><a>Dispute Management Solutions</a></li>
+      <li><a>Municipal Debt Management Solutions</a>
+      </li>
+      <li><a>Cloud Metering Solutions</a></li>
+    </ul>
+  </div>
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14338.446300601694!2d28.0578176!3d-26.0462622!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xefface3ebbc5c301!2sThe%20Avenues%20Office%20Park!5e0!3m2!1sen!2sza!4v1619396862313!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <div>
+    <h4>
+      Contact
+    </h4>
+    <p>Feel free to get in touch with us. we are always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+    <ul>
+      <li>email@gmail.com</li>
+      <li>+27711000000</li>
+      <li>+27711000000</li>
+    </ul>
+  </div>
+  <div class="CopyWriteDiv">
+    © 2020 Copyright: Hlangalwandile Bani
+  </div>
+</footer>

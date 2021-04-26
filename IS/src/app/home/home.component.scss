@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+$primary: #00c2cb;
+$grey:#545454;
+.home-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(12,42px);
+    grid-gap: 1em;
+    .home-logo{
+        grid-column: 1 / 2;
+        grid-row: 1 / 7;
+        background-color: $primary;
+        text-align: left;
+        padding: 2em;
+        color: #fff;
+        .lato{
+            font-size: 25px;
+        }
+        .spartan{
+            font-weight: bold;
+            font-size: 35px;
+        }
+    }
+    .home-btn-down{
+        grid-column: 1 / 2;
+        grid-row: 9 / -2;
+        padding: 1em;
+    }
+    .home-h1{
+        grid-column: 2 / -1;
+        grid-row: 5 / -1;
+    }
+    div{
+        
+        text-align: center;
+    }
+    .btn-page-down{
+        text-decoration: none;
+        border: solid 2px $primary;
+        padding: 25px 20px 25px 20px;
+        
+        border-radius: 100%;
+        color: $primary;
+        font-weight: bold;
+    }
+    h1{
+        font-family: 'spartan';
+        font-weight: bold;
+        font-size: 44px;
+        color:$grey;
+        text-align: right;
+    }
+}
