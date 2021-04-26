@@ -3,25 +3,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
 $primary: #00c2cb;
 $grey:#545454;
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: white;
+    font-size: 100px;
+  }
+  
+  .flip-box-front {
+    background-image:linear-gradient(0deg, rgba(255,255,255, 0.3), rgba(255,255,255, 0.8)), url("/assets/images/planet.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  
+  .flip-box-back {
+    color: #545454;
+    transform: rotateY(180deg);
+  }
 #pg-about-us{
-    display: grid;
-    grid-template: repeat(12,1fr) / repeat(12,1fr);
     .bigBlue{
         grid-row: 1 / -1;
         grid-column: 7 / -1;
-        background-color: $primary;
-        margin: 1em;
-        padding: 2em;
-        ul{
-            list-style: none;
-            text-align: right;
-            font-size: 4em;
-            padding: 1em;
-            li{
-                padding: 15px;
-                color: #fff;
-            }
-        }
+        
+        display: grid;
+        grid-template: repeat(12,1fr) / repeat(12,1fr);
+    .innerTile{
+        grid-column: span 6;
+        grid-row: span 6;
+    }
     }
     .page-title,.mcd-tile{
         grid-column: 1 / 7;
@@ -40,3 +74,9 @@ $grey:#545454;
     }
     
 }
+.center {
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+} 

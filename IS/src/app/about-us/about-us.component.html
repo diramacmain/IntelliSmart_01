@@ -16,11 +16,51 @@
                     <a>click to read more <span class="link-arrow-icon">&#x21C1;</span></a>
     </div>
     <div class="bigBlue">
-        <ul>
-            <li>electricity &nbsp;&nbsp; <fa-icon [icon]="faBolt"></fa-icon></li>
-            <li>water &nbsp;&nbsp;<fa-icon [icon]="faWater"></fa-icon></li>
-            <li>heat &nbsp;&nbsp;<fa-icon [icon]="faTemperatureHigh"></fa-icon></li>
-            <li>cooling &nbsp;&nbsp;<fa-icon [icon]="faWind"></fa-icon></li>
-        </ul>
+        <div class="innerTile">
+            <div class="flip-box">
+                <div class="flip-box-inner center">
+                  <div class="flip-box-front center">
+                    <fa-icon [icon]="faBolt"></fa-icon>
+                  </div>
+                  <div class="flip-box-back center ">
+                    <h2>Electricity</h2>
+                    
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="innerTile"><div class="flip-box">
+            <div class="flip-box-inner center">
+              <div class="flip-box-front center">
+                <fa-icon [icon]="faWater"></fa-icon>
+              </div>
+              <div class="flip-box-back center ">
+                <h2>Water</h2>
+                
+              </div>
+            </div>
+          </div></div>
+        <div class="innerTile"><div class="flip-box">
+            <div class="flip-box-inner center">
+              <div class="flip-box-front center">
+                <fa-icon [icon]="faTemperatureHigh"></fa-icon>
+              </div>
+              <div class="flip-box-back center ">
+                <h2>Heat</h2>
+                
+              </div>
+            </div>
+          </div></div>
+        <div class="innerTile"><div class="flip-box">
+            <div class="flip-box-inner center">
+              <div class="flip-box-front center">
+                <fa-icon [icon]="faWind"></fa-icon>
+              </div>
+              <div class="flip-box-back center ">
+                <h2>Cooling</h2>
+                
+              </div>
+            </div>
+          </div></div>
     </div>
 </div>
