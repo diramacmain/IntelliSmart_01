@@ -74,9 +74,38 @@ $grey:#545454;
     }
     
 }
-.center {
-  display: flex;
-  justify-content: center;
-  
-  align-items: center;
-} 
+@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 770px) {
+  #pg-about-us{
+    height: 1200px;
+    .container{
+      padding-left: 0px;padding-right: 0px;
+    }
+    .bigBlue{
+        grid-row: span 8;
+        grid-column: span 12;
+        display: grid;
+        grid-template: repeat(12,1fr) / repeat(12,1fr);
+    .innerTile{
+        grid-column: span 6;
+        grid-row: span 6;
+    }
+    }
+    .page-title,.mcd-tile{
+        grid-column: 1 / -1;
+        .lato{
+            font-size:30px;
+        }
+        .spartan{
+            font-size: 55px;
+        }
+    }
+    .page-title{
+        grid-row: 1 / 2;
+    }
+    .mcd-tile{
+        grid-row: 2 / 5;
+    }
+    
+}
+}
